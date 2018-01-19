@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-//        todo notification 11_END: mutiply data return from  QuestionGroupDisplay.java
+//        todo notification 11: mutiply data return from  QuestionGroupDisplay.java
+//        todo notification 12_END: edit theme for popup menu to diaglog in AndroidManifest.xml
         if(requestCode == 1) {
             Toast.makeText(this, String.valueOf(data.getIntExtra("position_return", 0)), Toast.LENGTH_SHORT).show();
         }
